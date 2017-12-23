@@ -1,0 +1,14 @@
+{% extends "rolety_perfect/base.html.jj2" %}
+{% block title %}Kontakt{% endblock %}
+{% block canonical_link %}kontakt.html{% endblock %}
+{% block content %}
+<article>
+  <h1>Kontakt</h1>
+  <p>
+    W celu złożenia zamówienia prosimy o kontakt pod nr telefonu:
+  </p>
+  <article id="phone-number">
+    <a href="tel:+48501175813">501-175-813</a>
+  </article>
+</article>
+{% endblock %}

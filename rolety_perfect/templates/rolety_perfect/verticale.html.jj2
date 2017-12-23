@@ -1,0 +1,38 @@
+{% extends "rolety_perfect/base.html.jj2" %}
+{% block title %}Verticale{% endblock %}
+{% block canonical_link %}verticale.html{% endblock %}
+{% block keywords %}verticale, pranie verticali{% endblock %}
+{% block content %}
+<article>
+  <h1>Verticale</h1>
+    <p>
+      Nadal niezastąpione i powszechnie stosowane w pokojach biurowych, salach konferencyjnych, sekretariatach, gabinetach lekarskich.
+      Wzornictwo verticali jest na tyle bogate,że często znajduje zwolenników w domach prywatnych.
+      Trafnie dobrany materiał i kolor verticali poprawia wizerunek każdego pomieszczenia i są istotnym akcentem dekoracyjnym.
+    </p>
+  <h2>Verticale - rodzaje</h2>
+    <p>
+      Verticale montowane są do szyny nośnej mocowanej do sufitu lub nadproża okiennego.
+      Verticale występują w dwóch szerokościach: 127 i 89 mm.
+    </p>
+  <h2>Verticale - zalety</h2>
+  <p>
+    Ze względu na swoją budowę i działanie verticale dają możliwość dowolnego zasłonięcia okna.
+    Verticale można również zastosować jako element dzielący pomieszczenie lub parawan.
+  </p>
+  <h2>Verticale - konserwacja</h2>
+  <p>
+    Dobrej jakości verticale nadają się do wielokrotnego prania.
+    Pranie verticali zalecane jest co najmniej raz na rok w celu usunięcia kurzu, roztoczy i alergizujących pyłków.
+    Nasza firma pierze verticale do ponad dwudziestu lat i posiadamy w tym zakresie bogate doświadczenie.
+  </p>
+  <amp-carousel layout="fixed-height" type="slides" height="360" delay="3000" loop autoplay>
+    <amp-img src="img/P1125303.JPG" alt="verticale" width="480px" height="360px"></amp-img>
+    <amp-img src="img/PB233639.JPG" alt="verticale" width="480px" height="360px"></amp-img>
+    <amp-img src="img/PB233643.JPG" alt="verticale" width="480px" height="360px"></amp-img>
+    <amp-img src="img/PB233667.JPG" alt="verticale" width="480px" height="360px"></amp-img>
+    <amp-img src="img/PB233669.JPG" alt="verticale" width="480px" height="360px"></amp-img>
+    <amp-img src="img/PB233676.JPG" alt="verticale" width="480px" height="360px"></amp-img>
+  </amp-carousel>
+</article>
+{% endblock %}

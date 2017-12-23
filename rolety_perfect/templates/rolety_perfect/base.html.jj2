@@ -1,0 +1,313 @@
+{% load static %}
+<!doctype html>
+<html amp lang="pl">
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="/{% block canonical_link %}{% endblock%}">
+    <meta charset="utf-8">
+    <!-- Browser Bar Coloration for Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#0052cc">
+    <!-- Browser Bar Coloration for Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#0052cc">
+    <!-- Browser Bar Coloration for iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0052cc">
+    <meta name="keywords" content="{% block keywords %}{% endblock %}">
+    <meta name="description" content="W ofercie firmy znajdują się żaluzje, rolety, moskitiery oraz verticale. Jako jedna z nielicznych zajmuje się praniem verticali. Rozwiązania dla biur i domów.">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=0">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+      body {
+        width: auto;
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      header {
+        background: #0052cc;
+        color: white;
+        font-size: 2em;
+        text-align: center;
+      }
+      h1 {
+        margin: 0;
+        padding: 0.5em;
+        background: white;
+        box-shadow: 0px 3px 5px grey;
+        text-align: center;
+      }
+      .headerbar {
+        z-index: 999;
+        top: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
+      .hamburger {
+        padding-left: 10px;
+      }
+      .site-name {
+        flex: 1;
+        padding-right: 10px;
+        text-align: right;
+      }
+      .sidebar {
+        padding: 10px;
+        margin: 0px;
+      }
+      .sidebar li {
+        list-style: none;
+        margin-bottom: 10px;
+      }
+      .sidebar p {
+        margin: 2px;
+      }
+      .sidebar a {
+        text-decoration: none;
+      }
+      .close-sidebar {
+        font-size: 3em;
+        padding-left: 5px;
+      }
+      .desktop-sidebar {
+        width: 15%;
+        float: left;
+        top: 20px;
+        position: fixed;
+        background-color: black;
+      }
+      .desktop-sidebar li {
+        list-style: none;
+        text-align: center;
+      }
+      .desktop-sidebar a {
+        color: white;
+      }
+      .logo {
+        margin: 3%;
+      }
+      .back2topbtn {
+        position: fixed;
+        bottom: 5%;
+        right: 5%;
+      }
+      h1 {
+        text-align: left;
+      }
+      article, footer {
+        padding: 3%;
+      }
+      footer {
+        background: black;
+      }
+      footer small {
+        color: white;
+        padding: 5px;
+      }
+      #phone-number {
+        margin-left: 33%;
+        margin-right: 33%;
+        text-align: center;
+        font-size: 2em;
+        background-color: black;
+        border-radius: 10px;
+      }
+      #phone-number a {
+        color: white;
+      }
+      @media screen and (min-width: 900px) {
+        header {
+          font-size: 1.5em;
+        }
+        .hamburger {
+          display: none;
+        }
+        .site-name {
+          font-size: 1.8em;
+        }
+        .logo {
+          display: none;
+        }
+        .upper-logo {
+          flex: 0;
+          padding-left: 10px;
+          text-align: left;
+        }
+        .headerbar, article, footer {
+          width: 78%;
+          padding-left: 1%;
+          padding-right: 1%;
+          float: right;
+        }
+        #phone-number {
+          margin-right: 10%;
+        }
+      }
+      @media screen and (max-width: 900px) {
+        .upper-logo {
+          display: none;
+        }
+        .desktop-sidebar {
+          display: none;
+        }
+        .logo {
+          text-align: center;
+        }
+        #phone-number {
+          margin-left: 13%;
+          margin-right: 13%;
+        }
+      }
+    </style>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "http://www.rolety-perfect.pl",
+        "name": "puph Perfect - okienne systemy zasłonowe",
+        "image": [
+          "http://www.rolety-perfect.pl/icons/logo.png",
+          "http://www.rolety-perfect.pl/img/P3047907.JPG",
+          "http://www.rolety-perfect.pl/img/P3047934.JPG",
+          "http://www.rolety-perfect.pl/img/P3057962.JPG",
+          "http://www.rolety-perfect.pl/img/PB233638.JPG",
+          "http://www.rolety-perfect.pl/img/PB233643.JPG"
+        ],
+        "address": {
+          "streetAddress": "PCK 10",
+          "addressLocality": "Pruszków",
+          "addressRegion": "MAZ",
+          "postalCode": "50-803",
+          "addressCountry": "PL"
+        },
+        "geo":{
+          "@type": "GeoCoordinates",
+          "latitude": 52.1612,
+          "longitude": 20.820887
+        },
+        "openingHoursSpecification": {
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ]
+        },
+        "telephone": "+48501175813"
+      }
+    </script>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <amp-analytics type="googleanalytics" id="analytics-pageview">
+      <script type="application/json">
+      {
+        "vars": {
+          "account": "UA-110993332-1"
+        },
+        "triggers": {
+          "trackPageview": {
+            "on": "visible",
+            "request": "pageview",
+          }
+        }
+      }
+      </script>
+    </amp-analytics>
+    <amp-analytics type="googleanalytics" id="analytics-clicknav">
+      <script type="application/json">
+      {
+        "vars": {
+          "account": "UA-110993332-1"
+        },
+        "triggers": {
+          "trackClickOnHeader" : {
+            "on": "click",
+            "selector": "#headerbar",
+            "request": "event",
+            "vars": {
+              "eventCategory": "ui-components",
+              "eventAction": "header-click"
+            }
+          }
+        }
+      }
+      </script>
+    </amp-analytics>
+    <amp-analytics type="googleanalytics" id="analytics-clicknav">
+      <script type="application/json">
+      {
+        "vars": {
+          "account": "UA-110993332-1"
+        },
+        "triggers": {
+          "trackClickOnHeader" : {
+            "on": "click",
+            "selector": "#desktop-sidebar",
+            "request": "event",
+            "vars": {
+              "eventCategory": "ui-components",
+              "eventAction": "header-click"
+            }
+          }
+        }
+      }
+      </script>
+    </amp-analytics>
+    <header id="headerbar" class="headerbar">
+      <div class="hamburger" role="button" on="tap:sidebar1.toggle" tabindex="0">
+        ☰
+      </div>
+      <div class="upper-logo">
+        <amp-img src={% static "icons/logo_name.png" %} alt="Logo" width="280px" height="137px"></amp-img>
+      </div>
+      <div class="site-name">
+        Perfect - okienne systemy zasłonowe
+      </div>
+    </header>
+    <amp-sidebar id="sidebar1" layout="nodisplay" side="left">
+      <div class="close-sidebar" role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0">
+        x
+      </div>
+        <ul class="sidebar">
+          <li><a href={% url "rolety_perfect:index" %}><amp-img src="{% static "icons/home.svg" %}" alt="home" width="50px" height="50px"></amp-img></a></li>
+          <li><a href={% url "rolety_perfect:zaluzje" %}><amp-img src="{% static "icons/zaluzje_small.png" %}" alt="żaluzje" width="50px" height="50px"></amp-img><p></p></a></li>
+          <li><a href={% url "rolety_perfect:rolety_zewnetrzne" %}><amp-img src="{% static "icons/roleta_kaseta_small.png" %}" alt="rolety zewnętrzne" width="50px" height="50px"></amp-img><p></p></a></li>
+          <li><a href={% url "rolety_perfect:rolety_materialowe" %}><amp-img src="{% static "icons/roleta_material_small.png" %}" alt="rolety materiałowe" width="50px" height="47px"></amp-img><p></p></a></li>
+          <li><a href={% url "rolety_perfect:verticale" %}><amp-img src="{% static "icons/verticale_small.png" %}" alt="verticale" width="50px" height="48px"></amp-img><p></p></a></li>
+          <li><a href={% url "rolety_perfect:moskitiery" %}><amp-img src="{% static "icons/mosquito_net_small.png" %}" alt="moskitiery" width="50px" height="41px"></amp-img><p></p></a></li>
+          <li><a href={% url "rolety_perfect:kontakt" %}><amp-img src="{% static "icons/phone2_small.png" %}" alt="kontakt" width="50px" height="42px"></amp-img><p></p></a></li>
+
+        </ul>
+    </amp-sidebar>
+      <div class="logo">
+        <amp-img src={% static "icons/logo_name.png" %} alt="Logo" width="309px" height="100px"></amp-img>
+      </div>
+    <aside class="desktop-sidebar" id="desktop-sidebar">
+      <nav>
+        <ul>
+          <li><a href={% url "rolety_perfect:index" %}>Home</a></li>
+          <li><a href={% url "rolety_perfect:zaluzje" %}><p>Żaluzje</p></a></li>
+          <li><a href={% url "rolety_perfect:rolety_zewnetrzne" %}><p>Rolety zewnętrzne</p></a></li>
+          <li><a href={% url "rolety_perfect:rolety_materialowe" %}><p>Rolety materiałowe</p></a></li>
+          <li><a href={% url "rolety_perfect:verticale" %}><p>Verticale</p></a></li>
+          <li><a href={% url "rolety_perfect:moskitiery" %}><p>Moskitiery</p></a></li>
+          <li><a href={% url "rolety_perfect:kontakt" %}><p>Kontakt</p></a></li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="back2topbtn">
+      <a href="#headerbar"><amp-img src="icons/up_circle.svg" alt="go up" width="40px" height="40px"></amp-img></a>
+    </div>
+    {% block content %}{% endblock %}
+    <footer>
+        <small>&copy 2017 puph Perfect Marek Izak. Wszystkie prawa zastrzeżone. Kopiowanie i rozpowszechnianie bez zgody puph Perfect Marek Izak zabronione. signal bars graphic by <a href="https://thenounproject.com/prosymbols">tnp_prosymbols</a> from <a href="https://thenounproject.com/">TheNounProject</a> is licensed under <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>. Check out the new logo that I created on <a href="http://logomakr.com" title="Logo Maker">LogoMaker.com</a> https://logomakr.com/5ChJef5ChJef</small>
+    </footer>
+  </body>
+</html>

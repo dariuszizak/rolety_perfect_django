@@ -1,0 +1,17 @@
+{% extends "rolety_perfect/base.html.jj2" %}
+{% block title %}Rolety zewnętrzne{% endblock %}
+{% block canonical_link %}rolety-zewnetrzne.html{% endblock %}
+{% block keywords %}rolety zewnętrzne{% endblock %}
+{% block content %}
+<article>
+  <h1>Rolety zewnętrzne</h1>
+  <p>
+    Ochrona przed intruzami. Skuteczna bariera przed utratą ciepła z pomieszczeń, dopływem hałasu, jak również ochrona przed upałem. Zabezpiecza również przed włamaniem.
+  </p>
+  <amp-carousel layout="fixed-height" type="slides" height="360" delay="3000" loop autoplay>
+    <amp-img src="img/P3057960.JPG" alt="roleta zewnetrzna" width="480px" height="360px"></amp-img>
+    <amp-img src="img/P3057962.JPG" alt="roleta zewnetrzna" width="480px" height="360px"></amp-img>
+    <amp-img src="img/P9038860.JPG" alt="roleta zewnetrzna" width="480px" height="360px"></amp-img>
+  </amp-carousel>
+</article>
+{% endblock %}

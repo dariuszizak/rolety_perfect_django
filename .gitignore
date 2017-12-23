@@ -1,0 +1,17 @@
+#ignore pyc
+
+rolety_perfect/*pyc
+
+#ignore everything but settings.py in django_tests
+
+django_tests/*
+!django_tests/settings.py
+
+#ignore database and manage.py
+
+db.sqlite3
+manage.py
+
+#ignore everything in rolety_perfect/migrations
+
+rolety_perfect/migrations

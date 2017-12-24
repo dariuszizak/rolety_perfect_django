@@ -5,14 +5,7 @@
 {% block keywords %}rolety, żaluzje, verticale, moskitiery, pranie verticali{% endblock %}
 {% block content %}
 <article>
-  <h1>Firma Perfect - nasza oferta</h1>
-  <p>
-    Jesteśmy firmą rodzinną. Świadczymy usługi od 1992 roku.
-    Rzetelność to nasza wizytówka. Pomagamy i doradzamy klientowi przy wyborze asortymentu i kolorystyki.
-    Do każdego zamówienia podchodzimy indywidualnie.
-    Każdy produkt (żaluzje, rolety, verticale, moskitiery, rolety zewnętrzne) wykonywane są “pod wymiar”- dla każdego klienta.
-    Na podstawie obserwacji i doświadczeń zdobywanych przez ponad 25 lat, zorientowaliśmy się, że klienci przede wszystkim poszukują  praktycznych, trwałych, solidnych i sprawdzonych rozwiązań jakimi nadal pozostają rolety, żaluzje i verticale.
-    Na nasze wyroby udzielamy gwarancji 36 m-cy oraz zapewniamy serwis pogwarancyjny.
+    {{ content|safe }}
     <p>Nasza oferta to:</p>
     <ul>
       <li>Żaluzje poziome aluminiowe i drewniane</li>

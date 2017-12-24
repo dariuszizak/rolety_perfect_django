@@ -1,13 +1,14 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-
 from django.shortcuts import render
-
-# Create your views here.
+from rolety_perfect.models import *
 
 
 def index(request):
-    return render(request, "rolety_perfect/index.html.jj2")
+    content = Page.objects.get(url="index.html").post.content
+    return render(request,
+                  "rolety_perfect/index.html.jj2",
+                  {"content": content})
 
 
 def verticale(request):

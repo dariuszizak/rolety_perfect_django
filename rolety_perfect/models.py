@@ -8,13 +8,13 @@ class Page(models.Model):
     """
     Model for identifing page name. Server as king of page ID.
     """
-    page_url = models.CharField(max_length=30)
-    page_title = models.CharField(max_length=100)
+    url = models.CharField(max_length=30)
+    title = models.CharField(max_length=100)
     canonical_link = models.CharField(max_length=100)
     keywords = models.CharField(max_length=100)
 
     def __unicode__(self):
-        return self.page_url
+        return self.url
 
 
 class Post(models.Model):
@@ -22,8 +22,10 @@ class Post(models.Model):
     Model for storing post which constists of headings below h1, paragraph and
     photos.
     """
-    page_url = models.ForeignKey(Page,
-                                 on_delete=models.CASCADE)
+    url = models.OneToOneField(Page,
+                               on_delete=models.CASCADE)
+    title = models.CharField(max_length=30,
+                             default="")
     content = FroalaField()
 
     def __unicode__(self):

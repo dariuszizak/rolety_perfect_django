@@ -1,20 +1,11 @@
 {% extends "rolety_perfect/base.html.jj2" %}
 {% load static %}
-{% block title %}Perfect - okienne systemy zasłonowe{% endblock %}
-{% block canonical_link %}index.html{% endblock %}
-{% block keywords %}rolety, żaluzje, verticale, moskitiery, pranie verticali{% endblock %}
+{% block title %}{{ page.title }}{% endblock %}
+{% block canonical_link %}{{ page.canonical_link }}{% endblock %}
+{% block keywords %}{{ page.keywords }}{% endblock %}
 {% block content %}
 <article>
     {{ content|safe }}
-    <p>Nasza oferta to:</p>
-    <ul>
-      <li>Żaluzje poziome aluminiowe i drewniane</li>
-      <li>Rolety materiałowe: wolnowiszące, w kasetach, dachowe</li>
-      <li>Verticale (oraz pranie verticali)</li>
-      <li>Rolety zewnętrzne</li>
-      <li>Moskitiery</li>
-    </ul>
-  </p>
   <amp-carousel layout="fixed-height" type="slides" height="360" delay="3000" loop autoplay>
     <amp-img src="{% static "rolety_perfect/img/P1125303.JPG"%}" alt="żaluzje aluminiowe" width="480px" height="360px"></amp-img>
     <amp-img src="{% static "rolety_perfect/img/P3047934.JPG" %}" alt="żaluzje aluminiowe" width="480px" height="360px"></amp-img>

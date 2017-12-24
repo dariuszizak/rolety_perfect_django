@@ -5,10 +5,12 @@ from rolety_perfect.models import *
 
 
 def index(request):
+    page = Page.objects.get(url="index.html")
     content = Page.objects.get(url="index.html").post.content
     return render(request,
                   "rolety_perfect/index.html.jj2",
-                  {"content": content})
+                  {"page": page,
+                   "content": content})
 
 
 def verticale(request):

@@ -169,7 +169,7 @@
         "@id": "http://www.rolety-perfect.pl",
         "name": "puph Perfect - okienne systemy zasłonowe",
         "image": [
-          "http://www.rolety-perfect.pl/icons/logo.png",
+          "http://www.rolety-perfect.pl/rolety_perfect/icons/logo.png",
           "http://www.rolety-perfect.pl/img/P3047907.JPG",
           "http://www.rolety-perfect.pl/img/P3047934.JPG",
           "http://www.rolety-perfect.pl/img/P3057962.JPG",
@@ -265,7 +265,7 @@
         ☰
       </div>
       <div class="upper-logo">
-        <amp-img src={% static "icons/logo_name.png" %} alt="Logo" width="280px" height="137px"></amp-img>
+        <amp-img src={% static "rolety_perfect/icons/logo_name.png" %} alt="Logo" width="280px" height="137px"></amp-img>
       </div>
       <div class="site-name">
         Perfect - okienne systemy zasłonowe
@@ -276,18 +276,18 @@
         x
       </div>
         <ul class="sidebar">
-          <li><a href={% url "rolety_perfect:index" %}><amp-img src="{% static "icons/home.svg" %}" alt="home" width="50px" height="50px"></amp-img></a></li>
-          <li><a href={% url "rolety_perfect:zaluzje" %}><amp-img src="{% static "icons/zaluzje_small.png" %}" alt="żaluzje" width="50px" height="50px"></amp-img><p></p></a></li>
-          <li><a href={% url "rolety_perfect:rolety_zewnetrzne" %}><amp-img src="{% static "icons/roleta_kaseta_small.png" %}" alt="rolety zewnętrzne" width="50px" height="50px"></amp-img><p></p></a></li>
-          <li><a href={% url "rolety_perfect:rolety_materialowe" %}><amp-img src="{% static "icons/roleta_material_small.png" %}" alt="rolety materiałowe" width="50px" height="47px"></amp-img><p></p></a></li>
-          <li><a href={% url "rolety_perfect:verticale" %}><amp-img src="{% static "icons/verticale_small.png" %}" alt="verticale" width="50px" height="48px"></amp-img><p></p></a></li>
-          <li><a href={% url "rolety_perfect:moskitiery" %}><amp-img src="{% static "icons/mosquito_net_small.png" %}" alt="moskitiery" width="50px" height="41px"></amp-img><p></p></a></li>
-          <li><a href={% url "rolety_perfect:kontakt" %}><amp-img src="{% static "icons/phone2_small.png" %}" alt="kontakt" width="50px" height="42px"></amp-img><p></p></a></li>
+          <li><a href={% url "rolety_perfect:index" %}><amp-img src="{% static "rolety_perfect/icons/home.svg" %}" alt="home" width="50px" height="50px"></amp-img></a></li>
+          <li><a href={% url "rolety_perfect:zaluzje" %}><amp-img src="{% static "rolety_perfect/icons/zaluzje_small.png" %}" alt="żaluzje" width="50px" height="50px"></amp-img><p></p></a></li>
+          <li><a href={% url "rolety_perfect:rolety_zewnetrzne" %}><amp-img src="{% static "rolety_perfect/icons/roleta_kaseta_small.png" %}" alt="rolety zewnętrzne" width="50px" height="50px"></amp-img><p></p></a></li>
+          <li><a href={% url "rolety_perfect:rolety_materialowe" %}><amp-img src="{% static "rolety_perfect/icons/roleta_material_small.png" %}" alt="rolety materiałowe" width="50px" height="47px"></amp-img><p></p></a></li>
+          <li><a href={% url "rolety_perfect:verticale" %}><amp-img src="{% static "rolety_perfect/icons/verticale_small.png" %}" alt="verticale" width="50px" height="48px"></amp-img><p></p></a></li>
+          <li><a href={% url "rolety_perfect:moskitiery" %}><amp-img src="{% static "rolety_perfect/icons/mosquito_net_small.png" %}" alt="moskitiery" width="50px" height="41px"></amp-img><p></p></a></li>
+          <li><a href={% url "rolety_perfect:kontakt" %}><amp-img src="{% static "rolety_perfect/icons/phone2_small.png" %}" alt="kontakt" width="50px" height="42px"></amp-img><p></p></a></li>
 
         </ul>
     </amp-sidebar>
       <div class="logo">
-        <amp-img src={% static "icons/logo_name.png" %} alt="Logo" width="309px" height="100px"></amp-img>
+        <amp-img src={% static "rolety_perfect/icons/logo_name.png" %} alt="Logo" width="309px" height="100px"></amp-img>
       </div>
     <aside class="desktop-sidebar" id="desktop-sidebar">
       <nav>
@@ -303,7 +303,7 @@
       </nav>
     </aside>
     <div class="back2topbtn">
-      <a href="#headerbar"><amp-img src="icons/up_circle.svg" alt="go up" width="40px" height="40px"></amp-img></a>
+      <a href="#headerbar"><amp-img src="rolety_perfect/icons/up_circle.svg" alt="go up" width="40px" height="40px"></amp-img></a>
     </div>
     {% block content %}{% endblock %}
     <footer>

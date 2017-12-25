@@ -1,34 +1,16 @@
 {% extends "rolety_perfect/base.html.jj2" %}
-{% block title %}Żaluzje{% endblock %}
-{% block canonical_link %}zaluzje.html{% endblock %}
-{% block keywords %}żaluzje{% endblock %}
+{% load static %}
+{% block title %}{{ page.title }}{% endblock %}
+{% block canonical_link %}{{ page.canonical_link }}{% endblock %}
+{% block keywords %}{{ page.keywords }}{% endblock %}
 {% block content %}
 <article>
-  <h1>Żaluzje</h1>
-  <p>
-    Najstarszy, sprawdzony i nadal aktualny system zasłonowy naszych okien.
-    Bardzo wygodny i wszechstronny sposób regulacji dopływu światła.
-    Możliwość całkowitego podniesienia żaluzji i odsłonięcia całej powierzchni okna.
-    <h2>Żaluzje - zastosowanie</h2>
-    <p>
-      Żaluzje nadal z powodzeniem są stosowane w naszych domach, mieszkaniach, oraz w biurach, szkołach, szpitalach.
-    </p>
-    <h2>Żaluzje - rodzaje</h2>
-    <p>
-      Żaluzje są wykonane z aluminium pokrytym bardzo trwałym lakierem lub z drewna.
-      Mogą być wyposażone w prowadnice linkowe.
-    </p>
-    <h2>Żaluzje - właściwości</h2>
-    <p>
-      Dodatkowym i bardzo ważnym atutem żaluzji jest znaczne obniżenie temperatury w pomieszczeniach w okresie upałów.
-    </p>
-    Alternatywą dla żaluzji mogą być <a href="rolety-materialowe.html">rolety w kasetach</a>, <a href="rolety-materialowe.html">rolety wolnowiszące</a> lub <a href="verticale.html">verticale</a>.
-  </p>
+  {{ content|safe }}
   <amp-carousel layout="fixed-height" type="slides" height="360" delay="3000" loop autoplay>
-    <amp-img src="img/P3047907.JPG" alt="żaluzje aluminiowe" width="480px" height="360px"></amp-img>
-    <amp-img src="img/P3047937.JPG" alt="żaluzje drewniane" width="480px" height="360px"></amp-img>
-    <amp-img src="img/P3047938.JPG" alt="żaluzje drewniane" width="480px" height="360px"></amp-img>
-    <amp-img src="img/P9038820.JPG" alt="żaluzje aluminiowe" width="480px" height="360px"></amp-img>
+    <amp-img src="{% static "rolety_perfect/img/P3047907.JPG" %} alt="żaluzje aluminiowe" width="480px" height="360px"></amp-img>
+    <amp-img src="{% static "rolety_perfect/img/P3047937.JPG" %} alt="żaluzje drewniane" width="480px" height="360px"></amp-img>
+    <amp-img src="{% static "rolety_perfect/img/P3047938.JPG" %} alt="żaluzje drewniane" width="480px" height="360px"></amp-img>
+    <amp-img src="{% static "rolety_perfect/img/P9038820.JPG" %} alt="żaluzje aluminiowe" width="480px" height="360px"></amp-img>
   </amp-carousel>
 </article>
 {% endblock %}

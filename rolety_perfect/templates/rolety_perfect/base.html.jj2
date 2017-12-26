@@ -169,12 +169,12 @@
         "@id": "http://www.rolety-perfect.pl",
         "name": "puph Perfect - okienne systemy zasłonowe",
         "image": [
-          "http://www.rolety-perfect.pl/rolety_perfect/icons/logo.png",
-          "http://www.rolety-perfect.pl/img/P3047907.JPG",
-          "http://www.rolety-perfect.pl/img/P3047934.JPG",
-          "http://www.rolety-perfect.pl/img/P3057962.JPG",
-          "http://www.rolety-perfect.pl/img/PB233638.JPG",
-          "http://www.rolety-perfect.pl/img/PB233643.JPG"
+          "http://www.rolety-perfect.pl{% static "/rolety_perfect/icons/logo.png" %}",
+          "http://www.rolety-perfect.pl{% static "/rolety_perfect/img/P3047907.JPG" %}",
+          "http://www.rolety-perfect.pl{% static "/rolety_perfect/img/P3047934.JPG" %}",
+          "http://www.rolety-perfect.pl{% static "/rolety_perfect/img/P3057962.JPG" %}",
+          "http://www.rolety-perfect.pl{% static "/rolety_perfect/img/PB233638.JPG" %}",
+          "http://www.rolety-perfect.pl{% static "/rolety_perfect/img/PB233643.JPG" %}"
         ],
         "address": {
           "streetAddress": "PCK 10",
